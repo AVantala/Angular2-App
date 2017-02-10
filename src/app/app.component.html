@@ -1,0 +1,142 @@
+<!--<h3>
+    Angular 2 Seed
+</h3>
+<nav>
+    <a [routerLink]="['/']">
+    Home
+  </a> |
+    <a [routerLink]="['/about']">
+    About
+  </a> |
+    <a [routerLink]="['/github', 'angular']">
+    Github Repos
+  </a> |
+    <a [routerLink]="['/contact']">
+    Contact Us
+  </a>
+</nav>-->
+<!--<header class="header">
+    <div class="container">
+        <h1> header </h1>
+    </div>
+</header>
+
+
+<main class="main">
+    <div class="container row">
+        <div class="col-xs-4 sidebar">
+            <h3>side bar</h3>
+        </div>
+        <div class="col-xs-8">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</main>
+
+
+<footer class="container-fluid footer">
+    Copy right © 2017
+</footer>-->
+
+<!--<!DOCTYPE html>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" [routerLink]="['/']">Angular-2 App</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/']">Home</a></li>
+                <li><a [routerLink]="['/about']">About</a></li>
+                <li><a [routerLink]="['/github', 'angular']">Github</a></li>
+                <li><a [routerLink]="['/contact']">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Preferences</li>
+                        <li><a>Admin</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a (click)="logout()">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="starter-template">
+    <router-outlet></router-outlet>
+</div>-->
+
+
+
+<div id="wrapper" [ngClass]="{active :isActive}">
+    <nav id="brand" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+    			</button>
+                <div class="navbar-brand">
+                    <a id="menu-toggle" href="#" class="btn-menu toggle" (click)="menuToggle($event)">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="" [routerLink]="['/']"> <span><strong> Project </strong> name </span> </a>
+                </div>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a [routerLink]="['/']">Home</a></li>
+                    <li><a [routerLink]="['/about']">About</a></li>
+                    <li><a [routerLink]="['/contact']">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <nav id="spy">
+            <ul class="sidebar-nav nav">
+                <li>
+                    <a href="#home"><i class="fa fa-home solo"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#anch1">
+                        <i class="fa fa-anchor solo"></i> Anchor 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#anch2">
+                        <i class="fa fa-anchor solo"></i> Anchor 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#anch3">
+                        <i class="fa fa-anchor solo"></i> Anchor 3
+                    </a>
+                </li>
+                <li>
+                    <a href="#anch4">
+                        <i class="fa fa-anchor solo"></i> Anchor 4
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        <div id="page-content" class="page-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
